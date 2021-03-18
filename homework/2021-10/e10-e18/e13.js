@@ -1,17 +1,10 @@
-function isPositiveInteger(value, onSuccess, onError){
+(function (){
+    let value = -13;
     if(value>0){
-        onSuccess();
+        console.log("Is Pos");
     }
     else{
-        onError();
+        console.log("Not Pos");
     }
-}
-
-let onSuccess = function () {
-    console.log("Is Pos");
-}
-let onError = function (){
-    console.log("Not Pos");
-}
-isPositiveInteger(-13, onSuccess, onError)
-//console.log(isPositiveInteger()); 
+})();
+//console.log(isPositiveInteger());
